@@ -112,6 +112,34 @@
 .sec-pv {
     padding: 100px 0px;
 }
+/* ICONS START*/
+.social-icons ul{
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+}
+.social-icons ul li {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid grey;
+    margin-right: 15px;
+}
+.social-icons ul li a {
+    color: #000;
+}
+.social-icons ul li:hover {
+    background-color: #e65f78;
+    border-color: #e65f78;
+    color: #fff;
+}
+.social-icons ul li a:hover {
+    color: white;
+}
+/* ICONS END */
 /* HELPER CLASSES END */
 
 
@@ -157,7 +185,6 @@
 }
 .about-me{
 	padding: 160px;
-	
 }
 /* SLIDER SECTION ENDS HERE */
 
@@ -191,26 +218,6 @@
 }
 /* ABOUT SECTION ENDS HERE */
 
-
-/* ICONS START*/
-.about-content a{
-	border: 1px solid gray;
-	border-radius: 30px;
-	padding: 10px;
-	color: black;
-
-}
-.about-content a:hover{
-	background-color: red;
-	color: white;
-}
-.about-content a:focus{
-	background-color: grey;
-}
-/* ICONS END */
-
-
-
 /* SERVICES SEC STARTS HERE */
 #services-sec {
     background-color: gainsboro
@@ -219,6 +226,10 @@
     text-align: center;
     width: 50%;
     margin: 0 auto;
+}
+#services-sec .title-content p{
+    margin-top: 15px;
+    margin-bottom: 55px;
 }
 #services-sec .box-outer {
     border-radius: 8px;
@@ -283,8 +294,7 @@
 }
 #work .work-content p{
     margin-top: 15px;
-    
-	margin-bottom: 50px;
+    margin-bottom: 55px;
 }
 #work .work-content .work-links{
 	display: flex;
@@ -426,8 +436,8 @@
     margin: 0 auto;
 }
 #blog .blog-content p{
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 15px;
+    margin-bottom: 55px;
     line-height: 20px;
 }
 
@@ -444,7 +454,7 @@
     text-decoration: none;
     color: black;
 }
-.card-content span{
+.card-content a{
     color: #e65f78;
     font-weight: bolder;
 }
@@ -462,7 +472,7 @@
 }
 #contact .contact-content p{
     margin-top: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
 
 }
 #contact .contacts .contact-sources{
@@ -478,21 +488,27 @@
 }
 /* FORM START HERE  */
 .form input{
-	width: 45%;
+	width: 44%;
 	height: 60px;
 	margin: 15px 25px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    padding: 5px;
 }
 .form span input{
-	width: 95%;
+	width: 94%;
 	height: 60px;
+    padding: 5px;
 	margin: 15px 25px;
 }
 .form span textarea{
-	width: 95%;
+	width: 94%;
 	text-transform: capitalize;
-
-	height: 60px;
+	height: 90px;
+    font-weight: bolder;
+    letter-spacing: 3px;
 	margin: 15px 25px;
+    padding: 5px;
 }
 .form button{
 	float: right;
@@ -505,7 +521,41 @@
 	border-radius: 7px;
 	text-transform: capitalize;
 	margin-right: 40px; 
+    letter-spacing: 3px;
 
 }
 /* FORM START HERE  */
 /* CONTACT SECTION ENDS HERE */
+
+/* FOOTER STARTS HERE */
+#footer{
+    background-color: #242424;
+}
+#footer .footer-content{
+    margin: 0 auto;
+    
+}
+#footer .footer-para p{
+    text-align: center;
+    color: grey;
+    margin: 20px 0px;
+    letter-spacing: 3px;
+}
+
+.back-to-top{
+    width: 30px;
+    height: 20px;
+    position: relative;
+    padding: 6px 2px;
+    text-align: center;
+    border: 2px solid #e65f78;
+    background-color: #e65f78;
+    color: white;
+    border-radius: 3px;
+    bottom: -90px;
+    left: 1200px;
+}
+.back-to-top a i{
+    color: white;
+}
+/* FOOTER ENDS HERE */
