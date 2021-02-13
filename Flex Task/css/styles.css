@@ -48,6 +48,14 @@
 
 
 /* HELPER CLASSES START */
+.row{
+	display: flex;
+	justify-content: space-evenly;
+}
+.col{
+	display: inherit;
+	flex: 1;
+}
 .btn {
 	padding: 8px 12px;
 	text-transform: uppercase;
@@ -180,41 +188,34 @@
 #slider-section h2 .title-name {
 	color: rgb(67, 226, 27);
 }
-.overlay{
+#slider-section .overlay{
 	background-color: rgba(44, 203, 212, 0.4);
 }
-.about-me{
-	padding: 160px;
-}
+
 /* SLIDER SECTION ENDS HERE */
 
 
 /* ABOUT SECTION STARTS HERE */
-.row{
-	display: flex;
-	justify-content: space-evenly;
-}
-.col{
-	display: inherit;
-	flex: 1;
-}
+
 #about-section .col img{
 	border: 1px solid gray;
 	border-radius: 3px;
 	padding: 2px;
 }
-.container2{
+#about-section .container2{
 	padding: 100px;
 }
-#about-me{
-	padding: 100px 0px;
+#about-section{
+    padding: 160px;
 }
-
-.about-content{
+#about-section .about-content{
 	padding-left: 30px;
 }
-.about-content h4 span{
+#about-section .about-content h4 span{
 	color: rgb(67, 226, 27);
+}
+#about-section .about-content p{
+    letter-spacing: 3px;
 }
 /* ABOUT SECTION ENDS HERE */
 
@@ -224,7 +225,7 @@
 }
 #services-sec .title-content {
     text-align: center;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
 }
 #services-sec .title-content p{
@@ -283,6 +284,9 @@
 #client .client-content img{
 	border: transparent;
 	border-radius: 100%;
+}
+#client .client-content  i{
+    color: #e65f78;
 }
 /* CLIENT SECTION ENDS HERE */
 
@@ -387,6 +391,7 @@
     font-weight: 200;
     text-transform: capitalize;
     margin: 0 0 1px;
+    color: white;
 }
 .box .post{
     font-size: 15px;
@@ -394,12 +399,14 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     display: block;
+    color: white;
     margin: 0 0 10px;
 }
 .box .icon{
     padding: 0;
     margin: 0;
     list-style: none;
+    color: white;
 }
 .box .icon li{
     margin: 0 3px;
@@ -418,7 +425,7 @@
 }
 .box .icon li a:hover{
     color: #fff;
-    background-color: #000;
+    background-color: #e65f78;
 }
 @media only screen and (max-width:990px){
     .box{ margin: 0 0 30px; }
@@ -559,3 +566,11 @@
     color: white;
 }
 /* FOOTER ENDS HERE */
+
+/* @ MEDIA  */
+@media(max-width: 992px){
+    .row{
+        flex-direction: column;
+    }
+    
+}
