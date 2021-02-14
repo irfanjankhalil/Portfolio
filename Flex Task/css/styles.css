@@ -32,8 +32,8 @@
 }
 .links li a:hover{
 	transition: 0.5s;
-	color: red;
-	border-bottom: 2px solid red;
+	color: #e65f78;
+	border-bottom: 2px solid #e65f78;
 }
 .links li a:focus{
 	color: rgb(67, 226, 27);
@@ -70,8 +70,8 @@
 }
 .btn-primary:hover {
 	color: #fff;
-	background-color: red;
-	border-color: red;
+	background-color: #e65f78;
+	border-color: #e65f78;
 }
 
 .btn-primary:focus {
@@ -567,10 +567,26 @@
 }
 /* FOOTER ENDS HERE */
 
-/* @ MEDIA  */
+/* @ MEDIA QUERIES */
 @media(max-width: 992px){
-    .row{
+    .navbar,.links,.row,.work-links{
         flex-direction: column;
     }
-    
+    .back-to-top{
+        position: unset;
+    }
+    .cards .col{
+        margin-bottom: 30px;
+    }
+    #slider-section{
+        height: 833px;
+        background-repeat: no-repeat;
+    }
+    #slider-section .overlay{
+        height: 769px;
+    }
+    #about-section{
+        padding: 0;
+        margin-bottom: 80px;
+    }
 }
